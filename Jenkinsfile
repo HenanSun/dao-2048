@@ -13,6 +13,7 @@ pipeline {
           sssdsad
         }
 
+        svn(url: 'ddd', changelog: true, poll: true)
       }
     }
   }
