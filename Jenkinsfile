@@ -4,7 +4,6 @@ pipeline {
     stage('build') {
       agent any
       steps {
-        sh 'make'
         echo '${env.ImageName}'
         git(url: 'https://github.com/HenanSun/dao-2048', branch: 'test-icon', changelog: true, credentialsId: 'ssss', poll: true)
         archiveArtifacts(artifacts: '/out', allowEmptyArchive: true, caseSensitive: true, defaultExcludes: true, excludes: '/out/i*', fingerprint: true, onlyIfSuccessful: true)
