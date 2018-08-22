@@ -13,6 +13,7 @@ pipeline {
         }
 
         svn(url: 'ddd', changelog: true, poll: true)
+        junit 'dddd'
       }
     }
   }
