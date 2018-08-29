@@ -1,9 +1,11 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('error') {
       steps {
         echo 'qqq'
+        sh '''adfadf
+adfader'''
       }
     }
   }
