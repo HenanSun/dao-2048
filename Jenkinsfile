@@ -6,6 +6,7 @@ pipeline {
         echo 'qqq'
         sh '''adfadf
 adfader'''
+        sh 'ssss'
       }
     }
   }
