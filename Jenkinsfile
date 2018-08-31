@@ -7,6 +7,7 @@ pipeline {
         sh '''adfadf
 adfader'''
         sh 'ssss'
+        junit(testResults: 'ddd', allowEmptyResults: true, keepLongStdio: true)
       }
     }
   }
