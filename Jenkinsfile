@@ -9,6 +9,7 @@ adfader'''
         sh 'ssss'
         junit(testResults: 'ddd', allowEmptyResults: true, keepLongStdio: true)
         cleanWs()
+        archiveArtifacts 'dddd'
       }
     }
   }
