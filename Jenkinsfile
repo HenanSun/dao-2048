@@ -6,7 +6,7 @@ pipeline {
         dddff = ''
       }
       steps {
-        echo '${ImageName}'
+        echo '${env.ImageName}'
         sh '''adfadf
 adfader'''
         sh 'ssss'
