@@ -2,8 +2,11 @@ pipeline {
   agent any
   stages {
     stage('error') {
+      environment {
+        dddff = ''
+      }
       steps {
-        echo 'qqq'
+        echo '${ImageName}'
         sh '''adfadf
 adfader'''
         sh 'ssss'
