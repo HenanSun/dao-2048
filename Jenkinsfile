@@ -11,7 +11,7 @@ pipeline {
 adfader'''
         sh 'ssss'
         junit(testResults: 'ddd', allowEmptyResults: true, keepLongStdio: true)
-        cleanWs(cleanWhenNotBuilt: true)
+        cleanWs(cleanWhenNotBuilt: true, notFailBuild: true)
         archiveArtifacts(artifacts: 'dddd', allowEmptyArchive: true, caseSensitive: true)
       }
     }
