@@ -6,5 +6,10 @@ pipeline {
         echo 'test2'
       }
     }
+    stage('') {
+      steps {
+        input 'continue?'
+      }
+    }
   }
 }
