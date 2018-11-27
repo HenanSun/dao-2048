@@ -6,9 +6,9 @@ pipeline {
         echo 'test2'
       }
     }
-    stage('') {
+    stage('error') {
       steps {
-        input 'continue?'
+        archiveArtifacts 'aa.txt, bewer'
       }
     }
   }
