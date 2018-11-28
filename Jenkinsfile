@@ -8,7 +8,7 @@ pipeline {
     }
     stage('error') {
       steps {
-        input 'Should we continue?'
+        input(message: 'Should we continue?', ok: 'Yes, we should.', submitter: 'miaoyun_admin')
       }
     }
   }
