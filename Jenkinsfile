@@ -9,6 +9,7 @@ pipeline {
     stage('error') {
       steps {
         archiveArtifacts 'aa.txt, bewer'
+        input 'Should we continue?'
       }
     }
   }
